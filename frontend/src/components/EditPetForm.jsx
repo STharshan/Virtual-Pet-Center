@@ -22,14 +22,14 @@ const EditPetForm = ({ pet, onClose, onUpdate }) => {
   return (
     <div className="fixed inset-0 bg-opacity-80 flex items-center justify-center z-50">
       <div className="bg-white p-6 rounded shadow-lg w-full max-w-md">
-        <h2 className="text-xl font-bold mb-4">Edit Pet</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">Edit Pet</h2>
         <form onSubmit={handleSubmit} className="space-y-3">
           <input
             name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="Name"
-            className="w-full border p-2"
+            className="w-full border p-2 rounded"
             required
           />
           <input
@@ -37,7 +37,7 @@ const EditPetForm = ({ pet, onClose, onUpdate }) => {
             value={form.species}
             onChange={handleChange}
             placeholder="Species"
-            className="w-full border p-2"
+            className="w-full border p-2 rounded"
             required
           />
           <input
@@ -46,7 +46,7 @@ const EditPetForm = ({ pet, onClose, onUpdate }) => {
             value={form.age}
             onChange={handleChange}
             placeholder="Age"
-            className="w-full border p-2 [appearance:textfield]"
+            className="w-full border p-2 [appearance:textfield] rounded"
             required
           />
           <input
@@ -54,7 +54,7 @@ const EditPetForm = ({ pet, onClose, onUpdate }) => {
             value={form.personality}
             onChange={handleChange}
             placeholder="Personality"
-            className="w-full border p-2"
+            className="w-full border p-2 rounded"
             required
           />
           <div className="flex justify-end space-x-2">
