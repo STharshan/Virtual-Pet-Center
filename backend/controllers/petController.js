@@ -52,7 +52,7 @@ exports.checkPetMoods = async (req, res) => {
     const pets = await Pet.find({ mood: 'Happy', adoption_date: null });
 
     const now = new Date();
-    const thresholdMinutes = 1; // You can increase this to a more realistic time
+    const thresholdMinutes = 1; 
 
     for (const pet of pets) {
       const created = new Date(pet.createdAt);
